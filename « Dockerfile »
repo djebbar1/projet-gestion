@@ -1,0 +1,12 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Copier et installer uniquement les dépendances d'abord
+COPY ./app/requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copier ton code après (cela évite de réinstaller les libs à chaque changement de code)
+COPY ./app /app
+
+CMD ["streamlit", "run", "streamlit_app.py", "--server.port=8501", "--server.address=0.0.0.0"]

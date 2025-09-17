@@ -1,0 +1,12 @@
+streamlit
+pandas
+matplotlib
+seaborn
+pydeck
+plotly
+fpdf2
+xlsxwriter
+openpyxl
+requests
+sqlalchemy
+pymysql

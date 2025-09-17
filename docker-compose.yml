@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: app_service
+    volumes:
+      - ./app:/app
+      - ./data:/app/data
+    ports:
+      - "8501:8501"
+    depends_on:
+      - db
+    tty: true
+
+  db:
+    image: nouchka/sqlite3
+    container_name: db_service
+    volumes:
+      - ./data:/data
+    stdin_open: true
+    tty: true

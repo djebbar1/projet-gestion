@@ -1,0 +1,47 @@
+# -----------------
+# Fichiers Python
+# -----------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# -----------------
+# Environnements
+# -----------------
+env/
+venv/
+.venv/
+
+# -----------------
+# Bases de données / exports
+# -----------------
+data/*.db
+exports/
+
+# -----------------
+# Logs / temporaires
+# -----------------
+*.log
+*.tmp
+*.swp
+
+# -----------------
+# Fichiers générés
+# -----------------
+*.csv
+*.xlsx
+*.xls
+
+# -----------------
+# Fonts et docs (optionnel)
+# -----------------
+# fonts/
+# docs/
+
+# -----------------
+# IDE / OS
+# -----------------
+.idea/
+.vscode/
+.DS_Store
